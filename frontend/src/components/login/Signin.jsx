@@ -6,9 +6,11 @@ export default  function Signin(){
         setup((prev)=>!prev);
     }
 
+ 
+
    return(
        <div>
-        <form action="" className={up ? 'login__registre' : 'none'}  id="login-in">
+        <form action="" className = {up ? 'login__registre' : 'none'}  id="login-in">
                     <h1 className="login__title">Sign In</h1>
 
                     <div className="login__box">
@@ -32,7 +34,7 @@ export default  function Signin(){
                 </form>
 
 
-                <form action="" className={up ? 'login__create none' : 'block'} id="login-up">
+                <form action="" className= {!up ? 'login__create' : 'block'} id="login-up">
                     <h1 className="login__title">Create Account</h1>
 
                    
